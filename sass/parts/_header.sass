@@ -1,0 +1,83 @@
+.header
+  padding: 30px 0 60px
+  &-wrapper
+    @include flex
+    position: relative
+
+  &-block
+
+    &__text
+      font-size: 20px
+      line-height: 20px
+      text-transform: uppercase
+      font-weight: bold
+      cursor: default
+
+    &__small
+      font-size: 11px
+      line-height: 22px
+      color: $gray
+      display: block
+      cursor: default
+
+    &_logo
+      text-align: left
+      margin-left: 14px
+
+    &_phone
+      text-align: right
+      margin-right: 31px
+
+
+.logo
+  @extend .header-wrapper
+
+  &__img
+    width: 38px
+    height: 40px
+
+.callback
+  @extend .header-wrapper
+
+.btn
+  &-overlay
+    font-size: 12px
+    font-weight: 500
+    border: 2px solid
+    padding: 15px 24px
+    transition: all 0.2s ease-in-out
+    &_black
+      border-color: $primary
+      color: $primary
+      &:hover
+        background-color: $primary
+        color: #fff
+
+.nav
+  background-color: #ffcc00
+  height: 60px
+  position: absolute
+  top: 76px
+  right: 0
+  width: 100%
+  &__list
+    height: 100%
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__item
+    flex: 1
+    text-align: center
+    transition: all 0.3s ease-in-out
+    &:hover
+      background-color: #ffd200
+      box-shadow: 0px 0px 26px -18px rgba(0,0,0,0.75)
+
+  &__link
+    display: block
+    text-decoration: none
+    font-weight: 500
+    font-size: 14px
+    line-height: 60px
+    color: #000
+    width: 100%
