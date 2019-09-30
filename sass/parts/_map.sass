@@ -1,0 +1,65 @@
+.section__maps
+  position: relative
+  &::after
+    content: ''
+    display: table
+    clear: both
+  
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  right: 0
+  & iframe
+    width: 100%
+    height: 100%
+  & #gmap_canvas img
+    max-width: none !important
+    background: none !important
+
+.contacts
+  width: 380px
+  margin: 80px auto
+  padding: 60px
+  background-color: #fff
+  float: right
+  position: relative
+  &__title
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 53px
+
+  &__phones,
+  &__address,
+  &__mail
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 40px
+
+  &__icon
+    margin-right: 18px
+    margin-top: 3px
+  
+  &__phone,
+  &__email,
+  &__city
+    display: block
+    text-decoration: none
+    font-size: 14px
+    font-weight: 500
+    font-style: normal
+    color: $primary
+    &:hover
+      text-decoration: underline
+
+  &__email,
+  &__city
+    font-weight: normal
+  
+  &__phone:first-child
+    margin-bottom: 10px
+
+  

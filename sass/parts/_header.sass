@@ -1,8 +1,5 @@
 .header
   padding: 30px 0 60px
-  &-wrapper
-    @include flex
-    position: relative
 
   &-block
 
@@ -28,16 +25,19 @@
       text-align: right
       margin-right: 31px
 
+.wrapper
+    @include flex
+    position: relative
 
 .logo
-  @extend .header-wrapper
+  @extend .wrapper
 
   &__img
     width: 38px
     height: 40px
 
 .callback
-  @extend .header-wrapper
+  @extend .wrapper
 
 .btn
   &-overlay
