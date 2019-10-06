@@ -12,4 +12,9 @@
       "savePath": "/css"
     }
   ],
+  "editor.fontFamily": "Fira Code",
+  "editor.fontWeight": "300",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.lineHeight": 20,
 }

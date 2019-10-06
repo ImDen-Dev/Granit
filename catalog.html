@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <title>Granit</title>
+  <link rel="stylesheet" href="./css/main-catalog.css">
+</head>
+
+<body>
+  <!--[if lt IE 9]> <h3>Hello World</h3> <![endif]-->
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="wrapper">
+        <div class="logo">
+          <a href="/" class="logo__link">
+            <img class="logo__img" src="./images/logo.png" alt="лого">
+          </a>
+          <div class="header-block header-block_logo">
+            <strong class="header-block__text">Granit</strong>
+            <small class="header-block__small">Доставка нерудных материалов</small>
+          </div>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/" class="nav__link">Главная</a>
+            </li>
+            <li class="nav__item">
+              <a href="./catalog.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="/services.html" class="nav__link">Услуги</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="nav__link">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="nav__link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="/" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="callback">
+          <div class="header-block header-block_phone">
+            <strong class="header-block__text">8 800 342-13-33</strong>
+            <small class="header-block__small">Бесплатный звонок по России</small>
+          </div>
+          <button class="btn btn-overlay btn-overlay_black" type="button">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+  <section class="section inStock">
+    <div class="container">
+      <h3 class="section__title">Каталог продукции</h3>
+      <!-- /.section__title -->
+      <div class="products__wrapper">
+        <div class="products">
+          <ul class="products__list">
+            <li class="products__items active" data-target="all">Вся Продукция</li>
+            <li class="products__items" data-target="timber">Брус</li>
+            <li class="products__items" data-target="edged-board">Доска обрезная</li>
+            <li class="products__items" data-target="fasteners">Крепёж</li>
+            <li class="products__items" data-target="wood-impregnation">Пропитки для дерева</li>
+            <li class="products__items" data-target="insulation">Утеплители, мембраны</li>
+          </ul>
+        </div>
+        <div class="card-wrapper products__card_wrapper">
+          <div class="card products__card" data-card="timber">
+            <div class="card__img-block">
+              <span class="card__stock">Акция</span>
+              <!-- /.card__stock -->
+              <img src="./images/40-30.jpg" alt="брус обрезной 40-30мм" class="card__img">
+            </div>
+            <!-- /.card__img-block -->
+            <h4 class="card__title card__title_goods">Брус обрезной 40-30 мм</h4>
+            <!-- /.card__title -->
+            <div class="card__prices">
+              <small class="card__price_old">1 500 р./т</small>
+              <!-- /.card__old-price -->
+              <strong class="card__price card__price_new">1 350 р./т</strong>
+              <!-- /.card__price card__price_new -->
+            </div>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="timber">
+            <div class="card__img-block">
+              <span class="card__stock">Акция</span>
+              <!-- /.card__stock -->
+              <img src="./images/50-50.jpg" alt="брус 50-50мм" class="card__img">
+            </div>
+            <!-- /.card__img-block -->
+            <h4 class="card__title card__title_goods">Брус 50-50 мм</h4>
+            <!-- /.card__title -->
+            <div class="card__prices">
+              <small class="card__price_old">1 500 р./т</small>
+              <!-- /.card__old-price -->
+              <strong class="card__price card__price_new">1 350 р./т</strong>
+              <!-- /.card__price card__price_new -->
+            </div>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="timber">
+            <div class="card__img-block">
+              <img src="./images/100-100.jpg" alt="брус 100-100 мм " class="card__img">
+            </div>
+            <!-- /.card__img-block -->
+            <h4 class="card__title card__title_goods">Брус 100-100 мм</h4>
+            <!-- /.card__title -->
+            <strong class="card__price">1 350 р./т</strong>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="edged-board">
+            <img src="./images/dosca 25-150.jpeg.jpg" alt="Доска 25-150мм" class="card__img">
+            <h4 class="card__title card__title_goods">Доска 25-150мм</h4>
+            <!-- /.card__title -->
+            <strong class="card__price">1 350 р./т</strong>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="edged-board">
+            <div class="card__img-block">
+              <span class="card__stock">Акция</span>
+              <!-- /.card__stock -->
+              <img src="./images/dosca24-80.png.jpg" alt="Доска 24-80мм" class="card__img">
+            </div>
+            <!-- /.card__img-block -->
+            <h4 class="card__title card__title_goods">Доска 24-80мм</h4>
+            <!-- /.card__title -->
+            <div class="card__prices">
+              <small class="card__price_old">1 500 р./т</small>
+              <!-- /.card__old-price -->
+              <strong class="card__price card__price_new">1 350 р./т</strong>
+              <!-- /.card__price card__price_new -->
+            </div>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="fasteners">
+            <div class="card__img-block">
+              <span class="card__stock">Акция</span>
+              <!-- /.card__stock -->
+              <img src="./images/fasteners.jpg" alt="Уголок перфорированный усиленный" class="card__img">
+            </div>
+            <!-- /.card__img-block -->
+            <h4 class="card__title card__title_goods">Уголок перфорированный усиленный</h4>
+            <!-- /.card__title -->
+            <div class="card__prices">
+              <small class="card__price_old">1 500 р./т</small>
+              <!-- /.card__old-price -->
+              <strong class="card__price card__price_new">1 350 р./т</strong>
+              <!-- /.card__price card__price_new -->
+            </div>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="wood-impregnation">
+            <img src="./images/wood-impregnation.jpg" alt="Огнебиозащита" class="card__img">
+            <h4 class="card__title card__title_goods">Огнебиозащита</h4>
+            <!-- /.card__title -->
+            <strong class="card__price">1 350 р./т</strong>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+          <div class="card products__card" data-card="insulation">
+            <img src="./images/insulation20-515x515.jpg" alt="Фольгированный утеплител" class="card__img">
+            <h4 class="card__title card__title_goods">Фольгированный утеплител</h4>
+            <!-- /.card__title -->
+            <strong class="card__price">1 350 р./т</strong>
+            <!-- /.card__price -->
+            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <!-- /.btn primary__btn primary__btn_card -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.card-wrapper -->
+      </div>
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.section.inStock -->
+  <footer class="footer">
+    <div class="container">
+      <div class="wrapper footer__wrapper">
+        <div class="logo__wrapper">
+          <div class="logo logo__footer">
+            <a href="/" class="logo__link">
+              <img class="logo__img" src="./images/logo-footer.png" alt="лого">
+            </a>
+            <div class="header-block header-block_logo footer-block_logo">
+              <strong class="header-block__text">Granit</strong>
+              <small class="header-block__small">Доставка нерудных материалов</small>
+            </div>
+          </div>
+          <small class="copyright">&copy; 2019 Гранит</small> <!-- /.copyright -->
+        </div>
+        <div class="callback footer_callback">
+          <div class="header-block header-block_phone footer-block_phone">
+            <strong class="header-block__text">8 800 342-13-33</strong>
+            <small class="header-block__small">Бесплатный звонок по России</small>
+          </div>
+          <button class="btn btn-overlay btn-overlay_white" type="button">Обратный звонок</button>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <script src="./js/catalog-main.js"></script>
+</body>
+
+</html>

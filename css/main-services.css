@@ -568,31 +568,6 @@ ul, li {
   width: 100%;
 }
 
-.offer-section {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(48, 48, 48, 0.55)), to(rgba(48, 48, 48, 0.55))), url("../images/offer.jpg") no-repeat center center;
-  background: linear-gradient(rgba(48, 48, 48, 0.55), rgba(48, 48, 48, 0.55)), url("../images/offer.jpg") no-repeat center center;
-  background-size: cover;
-  color: #fff;
-  padding: 170px 0 140px;
-}
-
-.offer {
-  width: 50%;
-}
-
-.offer__title {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.offer__subtitle {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  margin: 40px 0 65px;
-}
-
 .card {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -682,127 +657,12 @@ ul, li {
   background-color: #fff;
 }
 
-.card__img_advantages {
-  width: 50px;
+.card__services {
+  cursor: pointer;
 }
 
-.card__img-block {
-  position: relative;
-}
-
-.card__stock {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #ff0000;
-  font-size: 10px;
-  font-weight: 500;
-  padding: 7px 8px;
-  color: #fff;
-}
-
-.card__title_goods {
-  font-size: 13px;
-  margin: 22px 0 0;
-  text-decoration: underline;
-}
-
-.card__price_old, .card__price_new {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.card__price_old {
-  text-decoration: line-through;
-  color: #969696;
-  font-size: 10px;
-}
-
-.card__price_new {
-  color: #ff0000;
-}
-
-.section__maps {
-  position: relative;
-}
-
-.section__maps::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.map {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.map iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.map #gmap_canvas img {
-  max-width: none !important;
-  background: none !important;
-}
-
-.contacts {
-  width: 380px;
-  margin: 80px auto;
-  padding: 60px;
-  background-color: #fff;
-  float: right;
-  position: relative;
-}
-
-.contacts__title {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 53px;
-}
-
-.contacts__phones, .contacts__address, .contacts__mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 40px;
-}
-
-.contacts__icon {
-  margin-right: 18px;
-  margin-top: 3px;
-}
-
-.contacts__phone, .contacts__email, .contacts__city {
-  display: block;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 500;
-  font-style: normal;
-  color: #292929;
-}
-
-.contacts__phone:hover, .contacts__email:hover, .contacts__city:hover {
-  text-decoration: underline;
-}
-
-.contacts__email, .contacts__city {
-  font-weight: normal;
-}
-
-.contacts__phone:first-child {
-  margin-bottom: 10px;
+.services__text {
+  margin-top: 30px;
 }
 
 .footer {
@@ -848,4 +708,4 @@ ul, li {
 .copyright {
   font-size: 12px;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main-services.css.map */

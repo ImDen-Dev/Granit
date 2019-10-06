@@ -1,0 +1,39 @@
+.products
+  flex-grow: 0
+  flex-shrink: 0
+  flex-basis: calc(25% - 10px)
+  margin-right: 10px
+
+  &__wrapper
+    display: flex
+    flex-direction: row
+
+  &__card
+    flex-grow: 0
+    flex-shrink: 0
+    flex-basis: calc( 33.3% - 20px )
+
+    &_wrapper
+      flex: 1 0 75%
+      justify-content: flex-start
+
+    &:not(:last-child)
+      margin: 0 10px 10px
+
+    &:last-child
+      margin: 0 10px 10px
+
+  &__items
+    background-color: $bg-gray
+    border: 1px solid $gray
+    padding: 10px 15px
+    cursor: pointer
+
+    &.active
+      background-color: $gray
+
+    &:hover
+      background-color: $gray
+
+.hide
+  display: none
