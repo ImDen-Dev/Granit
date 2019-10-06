@@ -568,204 +568,33 @@ ul, li {
   width: 100%;
 }
 
-.card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 300px;
-  text-align: center;
-  padding: 38px 24px;
-  border: 2px solid #f6f6f6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.descriptions__text {
+  margin-bottom: 30px;
 }
 
-.card:not(:last-child) {
-  margin-right: 20px;
+.descriptions__list {
+  padding-left: 30px;
+  margin-bottom: 30px;
 }
 
-.card-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.descriptions__item {
+  list-style-type: disc;
+  margin-bottom: 20px;
 }
 
-.card__img {
-  width: 100%;
-  max-width: 248px;
+.descriptions__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.card__img-block {
-  width: 100%;
-  min-height: 1px;
+.descriptions__img_left {
+  float: left;
+  margin: 0 10px 10px 0;
 }
 
-.card__img_services {
-  max-width: 189px;
-}
-
-.card__title {
-  font-size: 15px;
-  font-weight: 500;
-  margin: 32px 0 19px;
-  width: 100%;
-  color: #292929;
-}
-
-.card__title_services {
-  text-decoration: underline;
-}
-
-.card__description {
-  font-size: 13px;
-  font-weight: 300;
-  color: #626262;
-  width: 100%;
-}
-
-.card__price {
-  display: block;
-  font-size: 16px;
-  font-weight: 500;
-  margin: 29px 0 32px;
-}
-
-.card__white {
-  border-color: #fff;
-  cursor: default;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.card__white:hover {
-  background-color: #fff;
-}
-
-.card__link {
-  cursor: pointer;
-}
-
-.card__services-text {
-  margin-top: 30px;
-}
-
-.card__img-block {
-  position: relative;
-}
-
-.card__stock {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #ff0000;
-  font-size: 10px;
-  font-weight: 500;
-  padding: 7px 8px;
-  color: #fff;
-}
-
-.card__title_goods {
-  font-size: 13px;
-  margin: 22px 0 0;
-  text-decoration: underline;
-}
-
-.card__price_old, .card__price_new {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.card__price_old {
-  text-decoration: line-through;
-  color: #969696;
-  font-size: 10px;
-}
-
-.card__price_new {
-  color: #ff0000;
-}
-
-.products {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: calc(25% - 10px);
-      flex-basis: calc(25% - 10px);
-  margin-right: 10px;
-}
-
-.products__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.products__card {
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  -ms-flex-preferred-size: calc( 33.3% - 20px);
-      flex-basis: calc( 33.3% - 20px);
-}
-
-.products__card_wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 75%;
-          flex: 1 0 75%;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.products__card:not(:last-child) {
-  margin: 0 10px 10px;
-}
-
-.products__card:last-child {
-  margin: 0 10px 10px;
-}
-
-.products__items {
-  background-color: #f4f4f4;
-  border: 1px solid #969696;
-  padding: 10px 15px;
-  cursor: pointer;
-}
-
-.products__items.active {
-  background-color: #969696;
-}
-
-.products__items:hover {
-  background-color: #969696;
-}
-
-.hide {
-  display: none;
+.descriptions__img_right {
+  float: right;
+  margin: 0 0 10px 10px;
 }
 
 .footer {
@@ -811,4 +640,4 @@ ul, li {
 .copyright {
   font-size: 12px;
 }
-/*# sourceMappingURL=main-catalog.css.map */
+/*# sourceMappingURL=services-descriptions.css.map */
