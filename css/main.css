@@ -404,8 +404,9 @@ button {
 
 .container {
   width: 100%;
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -524,7 +525,6 @@ ul, li {
 
 .nav {
   background-color: #ffcc00;
-  height: 60px;
   position: absolute;
   top: 76px;
   right: 0;
@@ -595,9 +595,8 @@ ul, li {
 
 .card {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 300px;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
   padding: 38px 24px;
   border: 2px solid #f6f6f6;
@@ -614,10 +613,9 @@ ul, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.card:not(:last-child) {
-  margin-right: 20px;
+  margin: 0 10px 10px 10px;
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
 }
 
 .card-wrapper {
@@ -627,8 +625,10 @@ ul, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .card__img {
@@ -639,6 +639,7 @@ ul, li {
 .card__img-block {
   width: 100%;
   min-height: 1px;
+  max-width: 248px;
 }
 
 .card__img_services {
@@ -855,5 +856,82 @@ ul, li {
 
 .copyright {
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-overlay_black {
+    background: url("../images/phone-receiver (3).png") no-repeat center center;
+  }
+  .btn-overlay_black:hover {
+    background-image: url("../images/phone-receiver-white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .btn-overlay_black span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-block_phone {
+    display: none;
+  }
+  .burger__item {
+    width: 100%;
+    text-align: right;
+  }
+  .burger__btn {
+    display: inline-block;
+    height: 2px;
+    background-color: black;
+    width: 30px;
+    margin: 20px 10px 20px 0;
+    position: relative;
+  }
+  .burger__btn::before, .burger__btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .burger__btn::before {
+    top: -10px;
+  }
+  .burger__btn::after {
+    top: 10px;
+  }
+  .burger__btn.active {
+    height: 0;
+  }
+  .burger__btn.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .burger__btn.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item {
+    width: 100%;
+    display: none;
+  }
+  .nav__link {
+    line-height: 35px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

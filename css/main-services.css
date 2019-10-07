@@ -404,8 +404,9 @@ button {
 
 .container {
   width: 100%;
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -524,7 +525,6 @@ ul, li {
 
 .nav {
   background-color: #ffcc00;
-  height: 60px;
   position: absolute;
   top: 76px;
   right: 0;
@@ -570,9 +570,8 @@ ul, li {
 
 .card {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  max-width: 300px;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: center;
   padding: 38px 24px;
   border: 2px solid #f6f6f6;
@@ -589,10 +588,9 @@ ul, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.card:not(:last-child) {
-  margin-right: 20px;
+  margin: 0 10px 10px 10px;
+  -ms-flex-preferred-size: calc(25% - 20px);
+      flex-basis: calc(25% - 20px);
 }
 
 .card-wrapper {
@@ -602,8 +600,10 @@ ul, li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .card__img {
@@ -614,6 +614,7 @@ ul, li {
 .card__img-block {
   width: 100%;
   min-height: 1px;
+  max-width: 248px;
 }
 
 .card__img_services {
