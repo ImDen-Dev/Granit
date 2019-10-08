@@ -1,0 +1,37 @@
+.modal
+  display: none
+  &__wrapper
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    padding: 60px 0
+    width: 100vw
+    height: 100vh
+    background-color: transparentize($primary, .2)
+    overflow-y: auto
+    z-index: 9999
+  &__window
+    width: 100%
+    max-width: 320px
+    margin: 0 auto
+    background-color: #fff
+    padding: 25px 45px
+    position: relative
+  &__close
+    position: absolute
+    top: 10px
+    right: 15px
+    font-size: 22px
+    cursor: pointer
+  &__title
+    text-align: center
+    font-size: 16px
+  &__form
+    margin: 10px 0 20px
+  &__input
+    width: 100%
+    padding: 15px 10px
+    margin: 10px 0
+    outline: none

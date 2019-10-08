@@ -36,19 +36,19 @@ button
   cursor: pointer
   will-change: background-color, color, box-shadow
 
-
 .primary__btn
   background-color: $yellow
   font-size: 12px
   font-weight: bold
   padding: 20px 30px
   transition: all 0.3s ease-in-out
+  text-decoration: none
+  color: $primary
+
   &_card
-    // padding: 
-    //   left: 52px
-    //   right: 52px
     max-width: 150px
     width: 100%
+
   &:hover
     box-shadow: 0px 5px 13px -4px rgba(255,210,0,1)
 
@@ -57,12 +57,14 @@ ul,li
 
 .section
   padding: 80px 0
+
   &__title
     text-align: center
     font-size: 20px
     font-weight: bold
     text-transform: uppercase
     margin-bottom: 60px
+    
   &__gray
     background-color: $bg-gray
 

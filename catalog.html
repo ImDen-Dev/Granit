@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
   <meta charset="UTF-8">
@@ -56,7 +56,8 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_black" type="button"><span>Обратный звонок</span></button>
+          <button class="btn btn-overlay btn-overlay_black" type="button" data-target="modal"><span>Обратный
+              звонок</span></button>
         </div>
       </div>
     </div>
@@ -94,7 +95,7 @@
               <!-- /.card__price card__price_new -->
             </div>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -114,7 +115,7 @@
               <!-- /.card__price card__price_new -->
             </div>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -127,7 +128,7 @@
             <!-- /.card__title -->
             <strong class="card__price">1 350 р./т</strong>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -137,7 +138,7 @@
             <!-- /.card__title -->
             <strong class="card__price">1 350 р./т</strong>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -157,7 +158,7 @@
               <!-- /.card__price card__price_new -->
             </div>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -177,7 +178,7 @@
               <!-- /.card__price card__price_new -->
             </div>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -187,7 +188,7 @@
             <!-- /.card__title -->
             <strong class="card__price">1 350 р./т</strong>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -197,7 +198,7 @@
             <!-- /.card__title -->
             <strong class="card__price">1 350 р./т</strong>
             <!-- /.card__price -->
-            <button class="btn primary__btn primary__btn_card">Купить</button>
+            <button class="btn primary__btn primary__btn_card" type="button" data-target="modal-1">купить</button>
             <!-- /.btn primary__btn primary__btn_card -->
           </div>
           <!-- /.card -->
@@ -228,13 +229,53 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_white" type="button">Обратный звонок</button>
+          <button class="btn btn-overlay btn-overlay_white" type="button" data-target="modal">Обратный звонок</button>
         </div>
       </div>
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal" id="modal">
+    <div class="modal__wrapper">
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <h4 class="modal__title">Обратный звонок</h4>
+        <form class="modal__form" action="#" method="get">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Введите имя">
+          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+          <button class="btn primary__btn" type="submit">Отправить</button>
+        </form>
+        <p class="modal__description">
+          Нажимая на кнопку отправить вы соглашаетесь с политикой конфиденциальности сайта.
+        </p>
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal__wrapper -->
+  </div>
+  <!-- /.modal -->
+  <div class="modal" id="modal-1">
+    <div class="modal__wrapper">
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <h4 class="modal__title">Hello</h4>
+        <form class="modal__form" action="#" method="get">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Введите имя">
+          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+          <textarea class="modal__input" name="message" id="message" cols="30" rows="3"
+            placeholder="Введите сообщение"></textarea>
+          <button class="btn primary__btn" type="submit">Отправить</button>
+        </form>
+        <p class="modal__description">
+          Нажимая на кнопку отправить вы соглашаетесь с политикой конфиденциальности сайта.
+        </p>
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal__wrapper -->
+  </div>
+  <!-- /.modal -->
   <script src="./js/catalog-main.js"></script>
   <script src="./js/main.js"></script>
 </body>

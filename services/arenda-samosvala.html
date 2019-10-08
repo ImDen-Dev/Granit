@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
   <meta charset="UTF-8">
@@ -7,9 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="favicon.png">
-  <title>Granit</title>
+  <title>Аренда самосвала &ndash; Granit</title>
   <link rel="stylesheet" href="../css/services-descriptions.css">
-  <!-- <base href="https://imden-dev.github.io/Granit/"> -->
+  <base href="https://imden-dev.github.io/Granit/">
 </head>
 
 <body>
@@ -56,7 +56,8 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_black" type="button"><span>Обратный звонок</span></button>
+          <button class="btn btn-overlay btn-overlay_black" type="button" data-target="modal"><span>Обратный
+              звонок</span></button>
         </div>
       </div>
     </div>
@@ -81,11 +82,16 @@
         <!-- /.descriptions__item -->
       </ul>
       <!-- /.descriptions__list -->
-      <p class="descriptions__text">В цену входит эксплуатация самосвала с оператором, с учетом всех затрат, без учета топлива. Стоимость аренды может заметно изменяться в зависимости от общего объема заказанной работы, от количества часов или смен в день, также от условий и сложности эксплуатации.</p>
+      <p class="descriptions__text">В цену входит эксплуатация самосвала с оператором, с учетом всех затрат, без учета
+        топлива. Стоимость аренды может заметно изменяться в зависимости от общего объема заказанной работы, от
+        количества часов или смен в день, также от условий и сложности эксплуатации.</p>
       <!-- /.descriptions__text -->
-      <p class="descriptions__text">Работы производятся только по авансовой схеме расчетов. Производиться предоплата от 300 часов. Отдельно оплачивается доставка самосвала на объект аренды и в случае короткого периода аренды его возврат на место стоянки.</p>
+      <p class="descriptions__text">Работы производятся только по авансовой схеме расчетов. Производиться предоплата от
+        300 часов. Отдельно оплачивается доставка самосвала на объект аренды и в случае короткого периода аренды его
+        возврат на место стоянки.</p>
       <!-- /.descriptions__text -->
-      <p class="descriptions__text">Готовы рассмотреть варианты аренды шарнирно сочлененного самосвала в том числе на короткий период работы. Территория применения арендных самосвалов не ограничена.</p>
+      <p class="descriptions__text">Готовы рассмотреть варианты аренды шарнирно сочлененного самосвала в том числе на
+        короткий период работы. Территория применения арендных самосвалов не ограничена.</p>
       <!-- /.descriptions__text -->
       <p class="descriptions__text">Средний расход топлива на сочлененных самосвалах:</p>
       <!-- /.descriptions__text -->
@@ -123,13 +129,32 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_white" type="button">Обратный звонок</button>
+          <button class="btn btn-overlay btn-overlay_white" type="button" data-target="modal">Обратный звонок</button>
         </div>
       </div>
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
+  <div class="modal" id="modal">
+    <div class="modal__wrapper">
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <h4 class="modal__title">Обратный звонок</h4>
+        <form class="modal__form" action="#" method="get">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Введите имя">
+          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+          <button class="btn primary__btn" type="submit">Отправить</button>
+        </form>
+        <p class="modal__description">
+          Нажимая на кнопку отправить вы соглашаетесь с политикой конфиденциальности сайта.
+        </p>
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal__wrapper -->
+  </div>
+  <!-- /.modal -->
   <script src="../js/main.js"></script>
 </body>
 

@@ -14,10 +14,15 @@
     padding: 15px
     &__goods
       flex-basis: calc(50% - 10px)
+    &__wrapper
+      justify-content: center
   
   .products
+    margin: 0 0 20px
     &__card
       flex-basis: calc(50% - 20px)
+      &_wrapper
+        justify-content: center
     &__wrapper
       flex-direction: column
 
@@ -87,6 +92,5 @@
 
 @media screen and ( max-width: 420px )
   .products
-    margin: 0 0 20px
     &__card
       flex-basis: calc(100% - 20px)

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru-RU">
 
 <head>
   <meta charset="UTF-8">
@@ -9,7 +9,7 @@
   <link rel="apple-touch-icon" href="./favicon.png">
   <title>Granit</title>
   <link rel="stylesheet" href="./css/main.css">
-  <!-- <base href="https://imden-dev.github.io/Granit/"> -->
+  <base href="https://imden-dev.github.io/Granit/">
 </head>
 
 <body>
@@ -56,7 +56,7 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_black" type="button">
+          <button class="btn btn-overlay btn-overlay_black" type="button" data-target="modal" data-modal="modal">
             <span>Обратный звонок</span>
           </button>
         </div>
@@ -72,7 +72,8 @@
         <p class="offer__subtitle">бетона, щебня, песка<br>и других нерудных материалов<br>по Москве и Московской
           области</p>
         <!-- /.offer__subtitle -->
-        <button class="btn primary__btn primary__btn_offer">Подробнее о доставке</button>
+        <a href="./delivery.html" class="btn primary__btn primary__btn_offer">Подробнее о доставке</a
+          href="./delivery.html">
         <!-- /.offer__btn -->
       </div>
       <!-- /.offer -->
@@ -94,7 +95,7 @@
           <!-- /.card__description -->
           <strong class="card__price">от 330 р./т</strong>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Подробнее</button>
+          <a href="./catalog.html" class="btn primary__btn primary__btn_card">Подробнее</a>
           <!-- /.btn primary__btn -->
         </div>
         <!-- /.card -->
@@ -107,7 +108,7 @@
           <!-- /.card__description -->
           <strong class="card__price">от 900 р./т</strong>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Подробнее</button>
+          <a href="./catalog.html" class="btn primary__btn primary__btn_card">Подробнее</a>
           <!-- /.btn primary__btn -->
         </div>
         <!-- /.card -->
@@ -121,7 +122,7 @@
           <!-- /.card__description -->
           <strong class="card__price">от 550 р./т</strong>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Подробнее</button>
+          <a href="./catalog.html" class="btn primary__btn primary__btn_card">Подробнее</a>
           <!-- /.btn primary__btn -->
         </div>
         <!-- /.card -->
@@ -190,7 +191,8 @@
             <!-- /.card__price card__price_new -->
           </div>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Купить</button>
+          <button class="btn primary__btn primary__btn_card" data-target="modal-1" data-modal="modal"
+            type="button">Купить</button>
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
@@ -210,7 +212,8 @@
             <!-- /.card__price card__price_new -->
           </div>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Купить</button>
+          <button class="btn primary__btn primary__btn_card" data-target="modal-1" data-modal="modal"
+            type="button">Купить</button>
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
@@ -223,7 +226,8 @@
           <!-- /.card__title -->
           <strong class="card__price">1 350 р./т</strong>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Купить</button>
+          <button class="btn primary__btn primary__btn_card" data-target="modal-1" data-modal="modal"
+            type="button">Купить</button>
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
@@ -236,7 +240,8 @@
           <!-- /.card__title -->
           <strong class="card__price">1 350 р./т</strong>
           <!-- /.card__price -->
-          <button class="btn primary__btn primary__btn_card">Купить</button>
+          <button class="btn primary__btn primary__btn_card" data-target="modal-1" data-modal="modal"
+            type="button">Купить</button>
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
@@ -251,19 +256,19 @@
       <div class="section__title">Наши услуги</div>
       <!-- /.section__title -->
       <div class="card-wrapper">
-        <a href="./services.html" class="card card__white card__link">
+        <a href="./services/arenda-samosvala.html" class="card card__white card__link">
           <img src="./images/1image.png" alt="" class="card__img card__img_services">
           <h4 class="card__title card__title_services">Аренда самосвала</h4>
           <!-- /.card__title card__title_services -->
         </a>
         <!-- /.card -->
-        <a href="./services.html" class="card card__white card__link">
+        <a href="./services/arenda-spectehniki.html" class="card card__white card__link">
           <img src="./images/2image.png" alt="" class="card__img card__img_services">
           <h4 class="card__title card__title_services">Аренда спецтехники</h4>
           <!-- /.card__title card__title_services -->
         </a>
         <!-- /.card -->
-        <a href="./services.html" class="card card__white card__link">
+        <a href="./services/ryte-transhei.html" class="card card__white card__link">
           <img src="./images/3image.png" alt="" class="card__img card__img_services">
           <h4 class="card__title card__title_services">Рытье траншеи</h4>
           <!-- /.card__title card__title_services -->
@@ -335,23 +340,55 @@
             <strong class="header-block__text">8 800 342-13-33</strong>
             <small class="header-block__small">Бесплатный звонок по России</small>
           </div>
-          <button class="btn btn-overlay btn-overlay_white" type="button">Обратный звонок</button>
+          <button class="btn btn-overlay btn-overlay_white" type="button" data-target="modal"
+            data-modal="modal">Обратный звонок</button>
         </div>
       </div>
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
-  <script src="./js/main.js"></script>
-
-  <div class="modal">
+  <div class="modal" id="modal">
     <div class="modal__wrapper">
-      <div class="modal__window"></div>
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <h4 class="modal__title">Обратный звонок</h4>
+        <form class="modal__form" action="#" method="get">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Введите имя">
+          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+          <button class="btn primary__btn" type="submit">Отправить</button>
+        </form>
+        <p class="modal__description">
+          Нажимая на кнопку отправить вы соглашаетесь с политикой конфиденциальности сайта.
+        </p>
+      </div>
       <!-- /.modal__window -->
     </div>
     <!-- /.modal__wrapper -->
   </div>
   <!-- /.modal -->
+  <div class="modal" id="modal-1">
+    <div class="modal__wrapper">
+      <div class="modal__window">
+        <span class="modal__close">&times;</span>
+        <h4 class="modal__title">Hello</h4>
+        <form class="modal__form" action="#" method="get">
+          <input class="modal__input" type="text" name="name" id="name" placeholder="Введите имя">
+          <input class="modal__input" type="tel" name="phone" id="phone" placeholder="Введите телефон">
+          <textarea class="modal__input" name="message" id="message" cols="30" rows="3"
+            placeholder="Введите сообщение"></textarea>
+          <button class="btn primary__btn" type="submit">Отправить</button>
+        </form>
+        <p class="modal__description">
+          Нажимая на кнопку отправить вы соглашаетесь с политикой конфиденциальности сайта.
+        </p>
+      </div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal__wrapper -->
+  </div>
+  <!-- /.modal -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

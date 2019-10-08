@@ -4,6 +4,7 @@
   src: local("Gotham Pro"), local("GothamPro"), url("../fonts/GothamPro.woff") format("woff"), url("../fonts/GothamPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: local("Gotham Pro Medium"), local("GothamPro-Medium"), url("../fonts/GothamPro-Medium.woff") format("woff"), url("../fonts/GothamPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
   src: local("Gotham Pro Black"), local("GothamPro-Black"), url("../fonts/GothamPro-Black.woff") format("woff"), url("../fonts/GothamPro-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
   src: local("Gotham Pro Bold"), local("GothamPro-Bold"), url("../fonts/GothamPro-Bold.woff") format("woff"), url("../fonts/GothamPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -424,6 +428,8 @@ button {
   padding: 20px 30px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #292929;
 }
 
 .primary__btn_card {
@@ -529,7 +535,7 @@ ul, li {
   top: 76px;
   right: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 
 .nav__list {
@@ -657,6 +663,57 @@ ul, li {
   font-size: 12px;
 }
 
+.modal {
+  display: none;
+}
+
+.modal__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 60px 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(41, 41, 41, 0.8);
+  overflow-y: auto;
+  z-index: 9999;
+}
+
+.modal__window {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 25px 45px;
+  position: relative;
+}
+
+.modal__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.modal__form {
+  margin: 10px 0 20px;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 15px 10px;
+  margin: 10px 0;
+  outline: none;
+}
+
 @media screen and (max-width: 768px) {
   .btn-overlay_black {
     background: url("../images/phone-receiver (3).png") no-repeat center center;
@@ -677,9 +734,22 @@ ul, li {
     -ms-flex-preferred-size: calc(50% - 10px);
         flex-basis: calc(50% - 10px);
   }
+  .card__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products {
+    margin: 0 0 20px;
+  }
   .products__card {
     -ms-flex-preferred-size: calc(50% - 20px);
         flex-basis: calc(50% - 20px);
+  }
+  .products__card_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .products__wrapper {
     -webkit-box-orient: vertical;
@@ -775,9 +845,6 @@ ul, li {
 }
 
 @media screen and (max-width: 420px) {
-  .products {
-    margin: 0 0 20px;
-  }
   .products__card {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
