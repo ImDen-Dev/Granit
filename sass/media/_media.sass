@@ -9,6 +9,17 @@
           background-position: center center
         & span
           display: none
+  .card
+    margin: 0 5px 10px
+    padding: 15px
+    &__goods
+      flex-basis: calc(50% - 10px)
+  
+  .products
+    &__card
+      flex-basis: calc(50% - 20px)
+    &__wrapper
+      flex-direction: column
 
 @media screen and ( max-width: 576px )
   .header
@@ -61,3 +72,21 @@
 
     &__link
       line-height: 35px
+  
+  .card
+    flex-basis: calc(100% - 10px)
+    &-wrapper
+      justify-content: center
+  
+  .products
+    margin: 0 0 20px
+    &__card
+      flex-basis: calc(50% - 20px)
+    &__wrapper
+      flex-direction: column
+
+@media screen and ( max-width: 420px )
+  .products
+    margin: 0 0 20px
+    &__card
+      flex-basis: calc(100% - 20px)

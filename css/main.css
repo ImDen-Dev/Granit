@@ -427,8 +427,8 @@ button {
 }
 
 .primary__btn_card {
-  padding-left: 52px;
-  padding-right: 52px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .primary__btn:hover {
@@ -529,6 +529,7 @@ ul, li {
   top: 76px;
   right: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .nav__list {
@@ -597,8 +598,9 @@ ul, li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  max-width: 300px;
   text-align: center;
-  padding: 38px 24px;
+  padding: 25px 12px;
   border: 2px solid #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,8 +616,8 @@ ul, li {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 10px 10px 10px;
-  -ms-flex-preferred-size: calc(25% - 20px);
-      flex-basis: calc(25% - 20px);
+  -ms-flex-preferred-size: calc(33.3% - 20px);
+      flex-basis: calc(33.3% - 20px);
 }
 
 .card-wrapper {
@@ -695,6 +697,11 @@ ul, li {
   width: 50px;
 }
 
+.card__goods {
+  -ms-flex-preferred-size: calc( 25% - 20px);
+      flex-basis: calc( 25% - 20px);
+}
+
 .card__img-block {
   position: relative;
 }
@@ -760,7 +767,8 @@ ul, li {
 }
 
 .contacts {
-  width: 380px;
+  max-width: 380px;
+  width: 100%;
   margin: 80px auto;
   padding: 60px;
   background-color: #fff;
@@ -870,6 +878,24 @@ ul, li {
   .btn-overlay_black span {
     display: none;
   }
+  .card {
+    margin: 0 5px 10px;
+    padding: 15px;
+  }
+  .card__goods {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+  .products__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -932,6 +958,38 @@ ul, li {
   }
   .nav__link {
     line-height: 35px;
+  }
+  .card {
+    -ms-flex-preferred-size: calc(100% - 10px);
+        flex-basis: calc(100% - 10px);
+  }
+  .card-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products {
+    margin: 0 0 20px;
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+  .products__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .products {
+    margin: 0 0 20px;
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
   }
 }
 /*# sourceMappingURL=main.css.map */

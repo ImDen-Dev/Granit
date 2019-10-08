@@ -58,14 +58,12 @@
           </div>
           <button class="btn btn-overlay btn-overlay_black" type="button">
             <span>Обратный звонок</span>
-            <!-- <img src="./images/phone-receiver (3).png" alt="phone"> -->
           </button>
         </div>
       </div>
     </div>
   </header>
   <!-- header -->
-
   <section class="offer-section">
     <div class="container">
       <div class="offer">
@@ -87,7 +85,7 @@
       <h3 class="section__title">Всегда в наличии</h3>
       <!-- /.section__title -->
       <div class="card-wrapper">
-        <div class="card">
+        <div class="card card_inStock">
           <img src="./images/lay.jpg" alt="Песок речной" class="card__img">
           <h4 class="card__title">Песок речной</h4>
           <!-- /.card__title -->
@@ -100,7 +98,7 @@
           <!-- /.btn primary__btn -->
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card card_inStock">
           <img src="./images/sheben.jpg" alt="Щебень" class="card__img">
           <h4 class="card__title">Щебень</h4>
           <!-- /.card__title -->
@@ -113,7 +111,7 @@
           <!-- /.btn primary__btn -->
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card card_inStock">
           <img src="./images/detal.jpg" alt="Грунт" class="card__img">
           <h4 class="card__title">Грунт</h4>
           <!-- /.card__title -->
@@ -176,7 +174,7 @@
       <h3 class="section__title">Популярные товары</h3>
       <!-- /.section__title -->
       <div class="card-wrapper">
-        <div class="card">
+        <div class="card card__goods">
           <div class="card__img-block">
             <span class="card__stock">Акция</span>
             <!-- /.card__stock -->
@@ -196,7 +194,7 @@
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card card__goods">
           <div class="card__img-block">
             <span class="card__stock">Акция</span>
             <!-- /.card__stock -->
@@ -216,7 +214,7 @@
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card card__goods">
           <div class="card__img-block">
             <img src="./images/img2.jpg" alt="Гранитный щебень 0-5 мм " class="card__img">
           </div>
@@ -229,7 +227,7 @@
           <!-- /.btn primary__btn primary__btn_card -->
         </div>
         <!-- /.card -->
-        <div class="card">
+        <div class="card card__goods">
           <div class="card__img-block">
             <img src="./images/img3.jpg" alt="карьерный песок" class="card__img">
           </div>
@@ -294,7 +292,7 @@
             <a class="contacts__phone" href="tel:+88000342334">
               8 800 034 23 34</a>
             <a class="contacts__phone" href="tel:+84950342334">8 495 034 23 34</a>
-          <!-- /.phones -->
+            <!-- /.phones -->
           </div>
           <!-- /.phones -->
         </div>
@@ -302,13 +300,13 @@
         <div class="contacts__address">
           <img src="./images/location-pin (2).png" alt="marker" class="contacts__icon">
           <address class="contacts__city">Московская обл. г. Балашиха, пер. Столовой, д.23, кор. 34</address>
-        <!-- /.contacts__ -->
+          <!-- /.contacts__ -->
         </div>
         <!-- /.contacts__address -->
         <div class="contacts__mail">
           <img src="./images/close-envelope.png" alt="конверт" class="contacts__icon">
           <a href="mailto:Info@stroika.ru" class="contacts__email">Info@stroika.ru</a>
-        <!-- /.contacts__ -->
+          <!-- /.contacts__ -->
         </div>
         <!-- /.contacts__mail -->
       </div>
@@ -345,6 +343,15 @@
   </footer>
   <!-- /.footer -->
   <script src="./js/main.js"></script>
+
+  <div class="modal">
+    <div class="modal__wrapper">
+      <div class="modal__window"></div>
+      <!-- /.modal__window -->
+    </div>
+    <!-- /.modal__wrapper -->
+  </div>
+  <!-- /.modal -->
 </body>
 
 </html>

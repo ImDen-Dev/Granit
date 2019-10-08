@@ -427,8 +427,8 @@ button {
 }
 
 .primary__btn_card {
-  padding-left: 52px;
-  padding-right: 52px;
+  max-width: 150px;
+  width: 100%;
 }
 
 .primary__btn:hover {
@@ -529,6 +529,7 @@ ul, li {
   top: 76px;
   right: 0;
   width: 100%;
+  z-index: 999;
 }
 
 .nav__list {
@@ -654,5 +655,132 @@ ul, li {
 
 .copyright {
   font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .btn-overlay_black {
+    background: url("../images/phone-receiver (3).png") no-repeat center center;
+  }
+  .btn-overlay_black:hover {
+    background-image: url("../images/phone-receiver-white.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .btn-overlay_black span {
+    display: none;
+  }
+  .card {
+    margin: 0 5px 10px;
+    padding: 15px;
+  }
+  .card__goods {
+    -ms-flex-preferred-size: calc(50% - 10px);
+        flex-basis: calc(50% - 10px);
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+  .products__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header-block_phone {
+    display: none;
+  }
+  .burger__item {
+    width: 100%;
+    text-align: right;
+  }
+  .burger__btn {
+    display: inline-block;
+    height: 2px;
+    background-color: black;
+    width: 30px;
+    margin: 20px 10px 20px 0;
+    position: relative;
+  }
+  .burger__btn::before, .burger__btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+  .burger__btn::before {
+    top: -10px;
+  }
+  .burger__btn::after {
+    top: 10px;
+  }
+  .burger__btn.active {
+    height: 0;
+  }
+  .burger__btn.active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .burger__btn.active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav__item {
+    width: 100%;
+    display: none;
+  }
+  .nav__link {
+    line-height: 35px;
+  }
+  .card {
+    -ms-flex-preferred-size: calc(100% - 10px);
+        flex-basis: calc(100% - 10px);
+  }
+  .card-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .products {
+    margin: 0 0 20px;
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(50% - 20px);
+        flex-basis: calc(50% - 20px);
+  }
+  .products__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .products {
+    margin: 0 0 20px;
+  }
+  .products__card {
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px);
+  }
 }
 /*# sourceMappingURL=services-descriptions.css.map */
