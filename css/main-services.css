@@ -817,6 +817,9 @@ ul, li {
 }
 
 @media screen and (max-width: 576px) {
+  .offer {
+    width: 100%;
+  }
   .header-block_phone {
     display: none;
   }
