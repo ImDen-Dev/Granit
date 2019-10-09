@@ -898,6 +898,7 @@ ul, li {
   background-color: #fff;
   padding: 25px 45px;
   position: relative;
+  z-index: 9999;
 }
 
 .modal__close {
