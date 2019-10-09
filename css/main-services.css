@@ -720,6 +720,7 @@ ul, li {
 
 .modal {
   display: none;
+  opacity: 0;
 }
 
 .modal__wrapper {
