@@ -5,7 +5,7 @@ window.onload = () => {
   let modalBtn = document.querySelectorAll('button[type=button]');
   let btns = document.querySelectorAll('.products__items');
   let cards = document.querySelectorAll('.card');
-  // let closeWrapper = document.querySelector('.modal__wrapper');
+  let map = document.querySelector('.map');
 
   
   burgerBtn.addEventListener('click', () => {
@@ -103,4 +103,32 @@ window.onload = () => {
   };
 // card selection
 
+
+// insert map
+
+let options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+}
+let callback = function(entries, observer) { 
+  entries.forEach( e => {
+    if(e.intersectionRatio > 0){
+      insertMap()
+    }
+  });
+};
+
+
+function insertMap(){
+  map.innerHTML = `<iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%BF%D1%80%D0%B0%D0%B3%D0%B0+(%D0%9F%D1%80%D0%B0%D0%B3%D0%B0)&amp;ie=UTF8&amp;t=k&amp;z=10&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>`
+}
+
+
+let observer = new IntersectionObserver(callback, options);
+
+observer.observe(document.querySelector('.section__goods'))
+
+
+// insert map
 }
