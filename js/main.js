@@ -3,6 +3,8 @@ window.onload = () => {
   let navItem   = document.querySelectorAll('.nav__item');
   let burgerItem   = document.querySelector('.burger__btn');
   let modalBtn = document.querySelectorAll('button[type=button]');
+  let btns = document.querySelectorAll('.products__items');
+  let cards = document.querySelectorAll('.card');
   
   burgerBtn.addEventListener('click', () => {
     burgerItem.classList.toggle('active');
@@ -33,4 +35,30 @@ window.onload = () => {
       modal.style.display = 'none';
     });
   });
+
+  btns.forEach(btn =>{
+    btn.addEventListener('click', () => {
+      let current = document.querySelector('.active');
+      current.classList.remove('active');
+      btn.classList.add('active');
+      let attr = btn.dataset.target;
+      (attr == 'all') ? showCard() : (showCard(), hideCard(attr));
+    });
+  });
+
+  function hideCard(attr) {
+    cards.forEach(c => {
+      let cardAttr = c.dataset.card;
+      (attr != cardAttr) ? c.classList.add('hide') : null
+    });
+  };
+
+  function showCard() {
+    cards.forEach(c => {
+      c.classList.remove('hide')
+    });
+  };
+
+  console.log((window.location.pathname == '/Catalog.html') ? 'yes' : 'no')
+  console.log(window.location.pathname)
 }
